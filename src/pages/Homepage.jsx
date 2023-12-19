@@ -1,14 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Vocabulary from "./Vocabulary";
 
 const Homepage = () => {
   return (
     <>
       <h1>Practice the Spanish verb tenses</h1>
-      <Link to="/">
-        <h4>Presente</h4>
-        <h4>Pretérito Indefinido</h4> 
-        
+      <Link to="/vocabulary" element={<Vocabulary />}>
+        <h4>Practice your Spanish vocab</h4>
       </Link>
     </>
   );
